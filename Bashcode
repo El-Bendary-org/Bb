@@ -1,0 +1,19 @@
+# فك الضغط
+unzip MoSTaa-ElBendary-v5-Final.zip
+cd MoSTaa-ElBendary-v5-Final
+
+# انشئ الموظفين 200 + Dr.Haitham
+cd server
+npm install
+# ضع MONGODB_URI في .env
+node scripts/createEmployees.js 200
+# Output: 👑 Owner Dr.Haitham@bendaryph.com / #01200400089 FULL PERMISSIONS
+# Output: 200 employees created - Password: #01200400094
+
+# Push to GitHub
+git init
+git add .
+git commit -m "v5.0 Final - Owner sees all orders + Paymob live + 200 employees auto + branch + Dr.Haitham super owner + Footer"
+git branch -M main
+git remote add origin https://github.com/El-Bendary-org/MoST-Meta-Benda.git
+git push -u origin main
